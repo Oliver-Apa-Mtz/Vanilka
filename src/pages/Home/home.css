@@ -1,0 +1,13 @@
+.banner-bg{
+	background-position: top;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.banner-esencia{
+	background: rgba(255, 255, 255, 0.6);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.bg-pink{
+	background: rgba(251, 232, 243, .5);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
