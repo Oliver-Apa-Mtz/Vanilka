@@ -8,13 +8,17 @@ import Jabon2 from '../../assets/img/jabon-2.png';
 import Jabon3 from '../../assets/img/jabon-3.png';
 import Jabon4 from '../../assets/img/jabon-4.png';
 import Jabon5 from '../../assets/img/jabon-5.png';
+import Jabon6 from '../../assets/img/jabon-6.png';
 import Sticker from '../../assets/img/sticker.png';
 import LogoBoda from '../../assets/img/logo-bodas.png';
 import CheckPink from '../../assets/img/check-pink.svg';
 import CheckBlue from '../../assets/img/check-blue.svg';
 import Check from '../../assets/img/check.svg';
-
-
+import Icon1 from '../../assets/img/icon-1.svg';
+import Icon2 from '../../assets/img/icon-2.svg';
+import Icon3 from '../../assets/img/icon-3.svg';
+import Icon4 from '../../assets/img/icon-4.svg';
+import CheckSmall from '../../assets/img/check-2.svg';
 
 const Home = () => {
 
@@ -161,9 +165,9 @@ const Home = () => {
 				<section className="px-4 mb-16">
 					<div className="max-w-6xl mx-auto">
 						<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-							<img src={Jabon3} alt="Product 1" className="w-full h-64 object-cover rounded-2xl" />
-							<img src={Jabon4} alt="Product 2" className="w-full h-64 object-cover rounded-2xl" />
-							<img src={Jabon5} alt="Product 3" className="w-full h-64 object-cover rounded-2xl" />
+							<img src={Jabon3} alt="Product 1" className="w-full h-64 object-cover rounded-[20px]" />
+							<img src={Jabon4} alt="Product 2" className="w-full h-64 object-cover rounded-[20px]" />
+							<img src={Jabon5} alt="Product 3" className="w-full h-64 object-cover rounded-[20px]" />
 						</div>
 						<div className="text-center">
 							<h2 className="text-[40px] font-bold text-gray mb-6 leading-[40px]">
@@ -176,7 +180,6 @@ const Home = () => {
 					</div>
 				</section>
 
-				{/* Product Cards */}
 				<section className="px-4 mb-16">
 					<div className="max-w-6xl mx-auto">
 						<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -214,27 +217,54 @@ const Home = () => {
 					</div>
 				</section>
 
-				{/* Wholesale Section */}
 				<section className="px-4 mb-16">
-					<div className="max-w-4xl mx-auto">
-						<div className="bg-gradient-to-r from-pink-400 to-purple-500 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
-							<div className="flex-1">
-								<img src="/wholesale-soap.jpg" alt="Mayoreo Vanilka" className="w-full rounded-2xl" />
+					<div className="max-w-[1240px] mx-auto">
+						<div className="bg-gradient-to-r from-pink-400 to-purple-500 rounded-[20px] p-9 flex flex-col md:flex-row items-center gap-6">
+							<div className="w-[42%]">
+								<img src={Jabon6} alt="Mayoreo Vanilka" className="w-[480px] rounded-[20px]" />
 							</div>
-							<div className="flex-1 text-white">
-								<h2 className="text-3xl font-bold mb-4">🌸 Mayoreo Vanilka</h2>
-								<p className="mb-6 opacity-90">Descuentos por volumen!</p>
-								<ul className="space-y-2 mb-6">
-									<li>• Desde 20 piezas</li>
-									<li>• Precios especiales para eventos</li>
-									<li>• Empaques personalizados disponibles</li>
-								</ul>
-								<div className="flex gap-4">
-									<span>📅 De 3 a 5 días hábiles (100 pzs)</span>
+							<div className="w-[58%] text-white">
+								<div className='flex'>
+									<img src="" alt="" />
+									<h2 className="text-3xl font-bold mb-4">Mayoreo Vanilka</h2>
 								</div>
-								<div className="flex gap-4 mt-4">
-									<span>📅 De 5 a 7 días hábiles (100+ pzs)</span>
+								<div className='flex'>
+									<div className='w-[300px]'>
+										<p className="mb-6 opacity-90">Descuentos por volumen!</p>
+										<ul className="space-y-2 mb-6">
+											<li className='flex items-center'>
+												<img src={CheckSmall} alt="Check" className="w-4 h-4 inline mr-2" />
+												Desde 20 piezas
+											</li>
+											<li className='flex items-center'>
+												<img src={CheckSmall} alt="Check" className="w-4 h-4 inline mr-2" />
+												Precios especiales para reventa
+											</li>
+											<li className='flex items-center'>
+												<img src={CheckSmall} alt="Check" className="w-4 h-4 inline mr-2" />
+												Mismos aromas y colores por lote
+											</li>
+										</ul>
+									</div>
+									<div>
+										<p className="mb-6 opacity-90">Tiempos de entrega:</p>
+										<ul className="space-y-2 mb-6">
+											<li className='flex items-center'>
+												<img src={CheckSmall} alt="Check" className="w-4 h-4 inline mr-2" />
+												7-10 días hábiles (50-99 pzas)
+											</li>
+											<li className='flex items-center'>
+												<img src={CheckSmall} alt="Check" className="w-4 h-4 inline mr-2" />
+												10-15 días hábiles (100+ pzas)
+											</li>
+											<li className='flex items-center'>
+												<img src={CheckSmall} alt="Check" className="w-4 h-4 inline mr-2" />
+												Anticipo requerido para producción
+											</li>
+										</ul>
+									</div>
 								</div>
+
 								<button className="bg-white text-purple-500 px-6 py-3 rounded-full font-semibold hover:bg-pink-50 transition-colors mt-6">
 									Cotizar mayoreo ♡
 								</button>
@@ -243,25 +273,35 @@ const Home = () => {
 					</div>
 				</section>
 
-				{/* Contact Section */}
 				<section className="px-4 mb-16">
-					<div className="max-w-4xl mx-auto">
+					<div className="max-w-[1040px] mx-auto">
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-							<div className="text-center">
-								<h3 className="text-xl font-bold text-gray-800 mb-4">Envíos y personalización</h3>
-								<p className="text-gray-600 mb-4">Instagram: @vanilka_jabones</p>
-								<p className="text-gray-600">Personalizamos pedidos para eventos</p>
+							<div className="banner-esencia rounded-[10px] px-12 py-5">
+								<h3 className="text-[30px] font-bold text-gray mb-4">Envíos y personalización</h3>
+								<div className='flex items-center gap-2 mb-4'>
+									<img src={Icon1} alt="Icono de envíos" className="w-[22px]" />
+									<p className="text-gray">Envios a todo México</p>
+								</div>
+								<div className='flex items-center gap-2 mb-1'>
+									<img src={Icon3} alt="Icono de personalización" className="w-[22px]" />
+									<p className="text-gray">Personalizamos pedidos para eventos</p>
+								</div>
 							</div>
-							<div className="text-center">
-								<h3 className="text-xl font-bold text-gray-800 mb-4">Pedidos y contacto</h3>
-								<p className="text-gray-600 mb-4">Instagram: @vanilka_jabones</p>
-								<p className="text-gray-600">Pedidos por WhatsApp: (55) 5524 2270</p>
+							<div className="banner-esencia rounded-[10px] px-12 py-5">
+								<h3 className="text-[30px] font-bold text-gray mb-4">Pedidos y contacto</h3>
+								<div className='flex items-center gap-2 mb-4'>
+									<img src={Icon4} alt="Icono de Instagram" className="w-[22px]" />
+									<p className="text-gray">Instagram: @Vanilka_soaps</p>
+								</div>
+								<div className='flex items-center gap-2 mb-1'>
+									<img src={Icon2} alt="Icono de WhatsApp" className="w-[22px]" />
+									<p className="text-gray">Pedidos por Whatsapp (66 9334 2375)</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				{/* CTA Section */}
 				<section className="px-4 mb-16">
 					<div className="max-w-2xl mx-auto text-center">
 						<button className="bg-pink-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-pink-600 transition-colors">
@@ -270,17 +310,6 @@ const Home = () => {
 					</div>
 				</section>
 
-				{/* Footer */}
-				<footer className="bg-pink-500 text-white py-8">
-					<div className="max-w-4xl mx-auto px-4 text-center">
-						<div className="flex justify-center gap-6 mb-4">
-							<a href="#" className="hover:opacity-80">📘 Facebook</a>
-							<a href="#" className="hover:opacity-80">📷 Instagram</a>
-							<a href="#" className="hover:opacity-80">💬 WhatsApp</a>
-						</div>
-						<p className="text-sm opacity-90">© 2024 Vanilka - Arte mineral en tu piel</p>
-					</div>
-				</footer>
 			</div>
 		</Layout>
 	)
